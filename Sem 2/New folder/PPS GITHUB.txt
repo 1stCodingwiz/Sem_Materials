@@ -1,0 +1,97 @@
+_Exit(operator);
+
+
+{ int a,b,c,d;
+scanf("%d %d %d %d", &a,&b,&c,&d);
+if(a>=1 || b<=5){
+    scanf("%d %d", &c,&d);
+    if (c==0 && d==1){
+        printf("YOU ARE ALLOWED TO ENTER THE CALCULATOR ");
+    }
+}
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+
+
+int main()
+{ printf("FOR ARITHMETIC OPERATIONS PRESS 1\n");
+printf("FOR RELATIONAL OPERATIONS PRESS 2\n");
+printf("FOR LOGICAL OPERATIONS PRESS 3\n");
+printf("FOR BITWISE OPERATIONS PRESS 4\n");
+
+int operation;
+float f1;
+  float f2;
+  char operator;
+  float answer;
+
+scanf("%d", &operation);
+
+switch(operation)
+{ case 1:
+
+    
+    
+  
+
+  printf("Enter the Operator: ");
+  scanf("%c",&operator);
+  
+  
+
+  switch(operator)
+    {
+        
+    case '/':
+    printf("Enter the numbers:\n");
+    scanf("%f %f", &f1,&f2);
+    answer = f1/f2;
+printf("DIVISION: %.7f",answer);
+      break;
+    case '*':
+    printf("Enter the numbers:\n");
+    scanf("%f %f", &f1,&f2);
+    answer = f1*f2;
+printf("MULTIPLICATION: %.7f",answer);
+      break;
+    case '+':
+    printf("Enter the numbers:\n");
+    scanf("%f %f", &f1,&f2);
+    answer = f1+f2;
+printf("ADDITION: %.7f",answer);
+      break;
+    case '-':
+    printf("Enter the numbers:\n");
+    scanf("%f %f", &f1,& f2);
+    answer = f1-f2;
+printf("SUBTRACTION: %.7f",answer);
+      break;
+
+    case '^':
+    printf("Enter the numbers:\n");
+    scanf("%f %f", &f1,&f2);
+    answer = pow(f1,f2);
+printf("EXPONENT: %.7f",answer);
+      break;
+    case 'r': answer = sqrt(f2);
+    printf("Enter the numbers:\n");
+printf("SQ. RT: %.7f",answer);
+      break;
+   default :
+printf("enter correct operator");
+    }
+
+
+case 2: 
+
+
+printf("");
+scanf
+
+
+  
+  return 0;
+}
